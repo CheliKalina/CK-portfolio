@@ -1,10 +1,15 @@
 .App {
   text-align: center;
+  cursor: crosshair;
 }
 
 .App-logo {
-  height: 40vmin;
+  width:2vw;
   pointer-events: none;
+}
+
+@media (max-width:850px) {
+  .App-logo { width: 4vw; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +40,69 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav {
+  padding: 1vw 3vw !important;
+}
+
+.nav-link {
+  font-size: .5em!important;
+  padding-left: 1.5vw !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  background-color: transparent;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.ck {
+  background-color: #f5f5f5;
+  color: black
+}
+
+.aura {
+  background-color: #caebff;
+  color: black
+}
+
+.fe {
+  background-color: black;
+  color: white
+}
+
+.boop {
+  background-color: #FCE4E9;
+  color: black
+}
+
+.nikon {
+  background-color: #F7E687;
+  color: black
+}
+
+.cond {
+  background-color: #03C587;
+  color: white
+}
+
+.alexir {
+  background-color: #025F56;
+  color: white
+}
+
+.impasta {
+  background-color: #F36131;
+  color: white
+}
+
+.hangry {
+  background-color: #8E191E;
+  color: white
 }
