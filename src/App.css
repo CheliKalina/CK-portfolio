@@ -1,15 +1,27 @@
+/* * {
+  border: 1px solid red
+} */
+
 .App {
   text-align: center;
   cursor: crosshair;
+  font-family: 'futura';
+  font-weight: normal;
 }
 
 .App-logo {
-  width:2vw;
+  width: 2vw;
   pointer-events: none;
 }
 
 @media (max-width:850px) {
-  .App-logo { width: 4vw; }
+  .App-logo {
+    width: 4vw;
+  }
+  .square {
+    width: 6vw;
+    height: 6vw;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -59,12 +71,58 @@
 
 .slide {
   width: 100vw;
-  height: 100vh;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.proj-nav {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  height: .8vw;
+  width: .8vw;
+  background: white;
+  border-radius: 15%;
+}
+
+.square:hover {
+  background: transparent;
+  border-radius: 15%;
+  border: 2px solid white;
+}
+
+.main {
+  width: 100%;
+  height: 62vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid blue */
 }
 
 .ck {
-  background-color: #f5f5f5;
-  color: black
+  background-color: #416772;
+  color: black;
+  height: 100%;
 }
 
 .aura {
@@ -105,4 +163,130 @@
 .hangry {
   background-color: #8E191E;
   color: white
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.z-layer:not(:first-child) {
+  color: lightgrey;
+}
+
+.first-img {
+  width: 20vw;
+}
+
+.contain {
+  height: 23vw;
+  width: 30vw;
+  display: flex;
+  flex-direction: column
+}
+
+.title-row {
+  height: 8vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-text {
+  height: 8vw;
+  width: 26vw;
+  padding-left: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.text {
+  color: black;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+  line-height: 2vw;
+  text-align: start;
+}
+
+._w {
+  color: white;
+}
+
+.text_lgrey {
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+  line-height: 2vw;
+  text-align: start;
+  color: 'lightgrey'; 
+  font-weight: 'bold'
+}
+
+.grey {
+  color: grey;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+  line-height: 2vw;
+  text-align: start;
+}
+
+.traffic-light {
+  width: 1vw;
+  height: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.color-sample {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  border: 1px solid black
+
+}
+.stackIcon-2 {
+  color: black;
+  font-size: 2vw;
+}
+
+.adobe-logos {
+  height: 2.5vw;
+  width: 2.5vw;
+  /* opacity: 0.4; */
+  margin: 1.5vh
+}
+
+.video {
+  height: auto;
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.options {
+  width: 15vh;
+  font-size: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3.5vw;
+  cursor: crosshair;
+  color: white;
+  margin-left: 2vw;
+  border-left: 1px solid white;
+  height: 6vh
+}
+
+.logo-holder {
+  font-size: 3vw;
+  transform: rotate(45deg);
+  padding: 1.5vw
 }
