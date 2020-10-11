@@ -22,6 +22,9 @@ const color2 = {
 const color3 = {
     backgroundColor: 'red'
 }
+const tag = {
+    color: 'red'
+}
 const quote = {
     color: '#f6ec0e'
 }
@@ -44,7 +47,7 @@ const CondInfo = () => (
             <img src={logo_cond} alt='Boop logo' className='logo-holder' style={{margin: '0 1vw'}}/>
             <div className='title-text'>
                 <h3 className='text _w'>Condoments</h3>
-                <h6 className='text _g'>Cover Your Wieners</h6>
+                <h6 className='text' style={tag}>Cover Your Wieners</h6>
             </div>
 
             <div className='traffic-light'>

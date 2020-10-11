@@ -21,7 +21,8 @@ const color3 = {
 }
 const quote = {
     color: '#46b5e8',
-    fontSize: '.7vw',
+    fontSize: '.8vw',
+    fontWeight: 'bold',
     bordeRight: '1px solid white'
 
 }
@@ -38,8 +39,8 @@ const AuraInfo = () => (
         <div className='title-row'>
             <img src={aura_logo} alt='Aura logo' className='logo-holder-aura' />
             <div className='title-text'>
-                <h3 className='text _w'>Aura Smart Air</h3>
-                <h6 className='text _g'>Customer Support Platform</h6>
+                <h3 className='text' style={{color: '#46b5e8'}}>Aura Smart Air</h3>
+                <h6 className='text'>Customer Support Platform</h6>
             </div>
 
             <div className='traffic-light'>
@@ -54,14 +55,14 @@ const AuraInfo = () => (
         </div>
         <div className='bullets'>
             <div>
-                <h6 className='text _g'>+ User Interface redesign</h6>
-                <h6 className='text _g'>+ Search by customer email</h6>
-                <h6 className='text _g'>+ Search by customer id</h6>
+                <h6 className='text'>+ UI redesign &amp; implementation</h6>
+                <h6 className='text'>+ Search platform by customer email</h6>
+                <h6 className='text'>+ Search individual customer id </h6>
             </div>
             <div>
-                <h6 className='text _g'>+ Firebase dynamic data</h6>
-                <h6 className='text _g'>+ Fetch using Particle API</h6>
-                <h6 className='text _g'>+ Shopify data integration</h6>
+                <h6 className='text'>+ Firebase dynamic data</h6>
+                <h6 className='text'>+ Fetch using Particle API</h6>
+                <h6 className='text'>+ Shopify data integration</h6>
             </div>
         </div>
 

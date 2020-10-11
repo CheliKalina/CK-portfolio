@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from './Assets/proj_logos/c_logo.png';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
@@ -12,6 +13,12 @@ import { FeIntro, FeInfo, FeHero, FeVid, FeImg1, FeImg2, FeImg3, FeImg4, FeImg5,
 import { BoopIntro, BoopInfo, BoopHero, BoopVid, BoopImg1, BoopImg2, BoopImg3, BoopLogo } from './Components/boop.js';
 import { NikonIntro, NikonInfo, NikonHero, NikonVid, NikonImg1, NikonImg2, NikonLogo } from './Components/nikon.js';
 import { CondIntro, CondInfo, CondHero, CondImg1, CondImg2, CondImg3, CondImg4, CondImg5, CondLogo } from './Components/cond.js';
+import { ComingI, ImpastaIntro, ImpHero } from './Components/impasta.js';
+import { ComingA, AlexirIntro, AleHero } from './Components/alexir.js';
+import { ComingM, MasqIntro, MasqHero } from './Components/masq.js';
+import { ComingH, HangryIntro, HangryHero } from './Components/hangry.js';
+import contact from './Assets/bc_contact.png'
+
 
 function App() {
   const [index, setIndex] = useState(0);
@@ -104,6 +111,47 @@ function App() {
       ]
     }
     ,
+    {
+      id: 7,
+      arr: [
+        { page: <ImpastaIntro /> },
+        { page: <ImpHero /> },
+        { page: <ComingI /> },
+
+
+      ]
+    }
+    ,
+    {
+      id: 8,
+      arr: [
+        { page: <AlexirIntro /> },
+        { page: <AleHero /> },
+        { page: <ComingA /> },
+
+
+      ]
+    }
+    ,
+    {
+      id: 9,
+      arr: [
+        { page: <HangryIntro /> },
+        { page: <HangryHero /> },
+        { page: <ComingH /> },
+      ]
+    }
+    // ,
+    // {
+    //   id: 10,
+    //   arr: [
+
+    // { page: <MasqIntro /> },
+    // { page: <MasqHero  /> },
+    // { page: <ComingM  /> },
+
+    //   ]
+    // }
   ]
 
   const slides = [
@@ -113,11 +161,33 @@ function App() {
     { key: 4, id: 4, bg: 'boop slide' },
     { key: 5, id: 5, bg: 'nikon slide' },
     { key: 6, id: 6, bg: 'cond slide' },
-    { key: 7, id: 7, bg: 'alexir slide' },
-    { key: 8, id: 8, bg: 'impasta slide' },
+    { key: 7, id: 7, bg: 'impasta slide' },
+    { key: 8, id: 8, bg: 'alexir slide' },
     { key: 9, id: 9, bg: 'hangry slide' },
+    // { key: 10, id: 10, bg: 'masq slide' },
   ]
   const [dateTime] = useState(new Date());
+  const [home, setHome] = useState(true)
+  const [about, setAbout] = useState(false)
+  const [contact, setContact] = useState(false)
+  const [mobile, setMobile] = useState(false)
+
+  const toAbout = () => {
+    setHome(false)
+    setContact(false);
+    setAbout(true);
+  }
+  const toContact = () => {
+    setHome(false);
+    setAbout(false);
+    setContact(true);
+  }
+
+  function Contact() {
+    return (
+      <img src={contact} alt='Contact' className='contact' />
+    )
+  }
 
   return (
     <div className="App">
@@ -126,29 +196,41 @@ function App() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link className="nav-link" href="/about">about</Nav.Link>
-            <Nav.Link className="nav-link" href="/contact">contact</Nav.Link>
+            <Nav.Link className="nav-link" onClick={toAbout}>about</Nav.Link>
+            {/* <Nav.Link className="nav-link" onClick={toContact}>contact</Nav.Link> */}
             <Nav.Link className="nav-link" href="http://chelikalina.com/" target="_blank">CK pt.1</Nav.Link>
           </Nav>
           <div className="nav-link" style={{ float: 'right' }}>{`${dateTime.toLocaleDateString()} ${dateTime.toLocaleTimeString()}`}</div>
         </Navbar.Collapse>
       </Navbar>
-      <div className='mobile'>
-        <h5>At this point in time, this Portfolio is only available to view on desktop.</h5>
-        <p>Apologies for the inconvenience!</p>
-      </div>
-      <Carousel activeIndex={index} onSelect={handleSelect} interval={null} prevIcon={<div className="square"></div>} nextIcon={<div className="square"></div>} indicators={false}>
-        {slides.map(slide =>
-          <Carousel.Item className={slide.bg} key={slide.key} >
-            {pages.map(proj =>
-              proj.id === slide.id ? <Project project={proj.arr} /> : null
-            )
-            }
-          </Carousel.Item>
-        )}
-      </Carousel >
-    </div >
 
+      {home &&
+        <Carousel activeIndex={index} onSelect={handleSelect} interval={null} prevIcon={<div className="square"></div>} nextIcon={<div className="square"></div>} indicators={false}>
+          {slides.map(slide =>
+            <Carousel.Item className={slide.bg} key={slide.key} >
+              {pages.map(proj =>
+                proj.id === slide.id ? <Project project={proj.arr} /> : null
+              )
+              }
+            </Carousel.Item>
+          )}
+        </Carousel >
+
+      }
+      {about &&
+        <About />
+      }
+      {contact &&
+        <Contact />
+      }
+      {mobile &&
+        <div className='mobile'>
+          <h5>At this point in time, this Portfolio is only available to view on desktop.</h5>
+          <p>Apologies for the inconvenience!</p>
+        </div>
+      }
+
+    </div >
   );
 }
 
