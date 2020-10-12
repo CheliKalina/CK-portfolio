@@ -170,7 +170,6 @@ function App() {
   const [home, setHome] = useState(true)
   const [about, setAbout] = useState(false)
   const [contact, setContact] = useState(false)
-  const [mobile, setMobile] = useState(false)
 
   const toAbout = () => {
     setHome(false)
@@ -223,13 +222,12 @@ function App() {
       {contact &&
         <Contact />
       }
-      {mobile &&
+
         <div className='mobile'>
           <h5>At this point in time, this Portfolio is only available to view on desktop.</h5>
           <p>Apologies for the inconvenience!</p>
         </div>
-      }
-
+      
     </div >
   );
 }

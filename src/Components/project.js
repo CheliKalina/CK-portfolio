@@ -21,13 +21,13 @@ function Project(proj) {
     }
     return (
         <div className='slide-2'>
-            <div className='proj-nav'>
-                <div className="square" onClick={handleBackClick} disable={enabled}></div>
+            <div className='proj-nav' onClick={handleBackClick} disable={enabled}>
+                <div className="square"></div>
             </div>
             <div className='main'>
                 <div>{singlePage[pageNum].page}</div>
             </div>
-            <div className='proj-nav'><div className="square" onClick={handleClick} disable={enabled} ></div></div>
+            <div className='proj-nav' onClick={handleClick} disable={enabled}><div className="square"  ></div></div>
         </div>
 
 

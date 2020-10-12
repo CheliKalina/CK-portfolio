@@ -44,7 +44,7 @@ const FeInfo = () => (
         <div className='title-row'>
             <img src={fe_gradient} alt='Fe logo' className='logo-holder' />
             <div className='title-text'>
-                <h3 className='text _w'>Fe: Mars Fitness Experience</h3>
+                <h4 className='text _w'>Fe: Mars Fitness Experience</h4>
                 <h6 className='text _g'>Lunge for Mankind</h6>
             </div>
 

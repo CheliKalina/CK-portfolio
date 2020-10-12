@@ -543,6 +543,11 @@
     font-size: 1.2vh;
     margin-bottom: 1vh
   }
+
+  .text-quote {
+    font-size: 2vw;
+  }
+
   .logo-holder-c {
     font-size: 9vw;
     padding-left: 0;
@@ -557,18 +562,58 @@
   }
 }
 
-@media (max-width:380px) {
-  .slide {
+@media (max-width:600px) {
+  .mobile {
+    display: inline-block;
+    padding: 17vw;
+  }
+    .slide {
     display: none;
   }
   .square {
     display: none;
   }
-  .mobile {
-    width: 100vw;
-    padding: 17vw;
-  }
+
   p {
     color: pink;
   }
+
+  /* .quote-holder {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .text-quote {
+    font-weight: normal;
+    padding-right: 1vw;
+    line-height: 1.5vw;
+    text-align: start;
+    color: black;
+    font-size: 3vw;
+    width: 100%;
+  }
+  
+  .quote-author {
+    font-size: 1vw;
+    text-align: end;
+    width: 7vw;
+    color: white;
+    margin-left: 1vw;
+    line-height: 1.7vw;
+  }
+  
+  .quote-author-aura {
+    font-size: 1vw;
+    text-align: end;
+    width: 7vw;
+    color: white;
+    margin-left: 1vw;
+  }
+  
+  .bullets {
+    display: flex;
+    flex-direction: column ;
+    padding-left: 1.5vw
+  } */
 }
