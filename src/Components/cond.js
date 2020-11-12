@@ -30,7 +30,8 @@ const quote = {
 }
 const quotetext = {
     color: '#f6ec0e',
-    width: '35vw'
+    width: '35vw',
+    fontWeight: 'bold',
 }
 const voice = {
     color: '#0090D5'
@@ -44,10 +45,12 @@ const CondIntro = () => (
 const CondInfo = () => (
     <div className='contain'>
         <div className='title-row'>
-            <img src={logo_cond} alt='Boop logo' className='logo-holder' style={{margin: '0 1vw'}}/>
             <div className='title-text'>
-                <h3 className='text _w'>Condoments</h3>
+            <img src={logo_cond} alt='Boop logo' className='logo-holder' style={{margin: '0 1vw'}}/>
+            <div>
+                <h4 className='text _w'>Condoments</h4>
                 <h6 className='text' style={tag}>Cover Your Wieners</h6>
+            </div>
             </div>
 
             <div className='traffic-light'>

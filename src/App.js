@@ -15,9 +15,9 @@ import { NikonIntro, NikonInfo, NikonHero, NikonVid, NikonImg1, NikonImg2, Nikon
 import { CondIntro, CondInfo, CondHero, CondImg1, CondImg2, CondImg3, CondImg4, CondImg5, CondLogo } from './Components/cond.js';
 import { ComingI, ImpastaIntro, ImpHero } from './Components/impasta.js';
 import { ComingA, AlexirIntro, AleHero } from './Components/alexir.js';
-import { ComingM, MasqIntro, MasqHero } from './Components/masq.js';
+// import { ComingM, MasqIntro, MasqHero } from './Components/masq.js';
 import { ComingH, HangryIntro, HangryHero } from './Components/hangry.js';
-import contact from './Assets/bc_contact.png'
+
 
 
 function App() {
@@ -25,6 +25,13 @@ function App() {
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
+
+  const dec = {
+    textDecoration: 'none',
+    fontWeight: 'bold',
+    color: 'blue', 
+
+  } 
 
   const pages = [
 
@@ -169,23 +176,10 @@ function App() {
   const [dateTime] = useState(new Date());
   const [home, setHome] = useState(true)
   const [about, setAbout] = useState(false)
-  const [contact, setContact] = useState(false)
 
   const toAbout = () => {
     setHome(false)
-    setContact(false);
     setAbout(true);
-  }
-  const toContact = () => {
-    setHome(false);
-    setAbout(false);
-    setContact(true);
-  }
-
-  function Contact() {
-    return (
-      <img src={contact} alt='Contact' className='contact' />
-    )
   }
 
   return (
@@ -219,13 +213,11 @@ function App() {
       {about &&
         <About />
       }
-      {contact &&
-        <Contact />
-      }
 
         <div className='mobile'>
           <h5>At this point in time, this Portfolio is only available to view on desktop.</h5>
           <p>Apologies for the inconvenience!</p>
+          <a href={'https://docs.google.com/document/d/15EtAk4f-ivYSYvbUlOs7V72n1ARfXOen-XkQqi9eYU0/edit?usp=sharing'} style={dec} target="_blank" rel="noopener noreferrer">resume</a>
         </div>
       
     </div >

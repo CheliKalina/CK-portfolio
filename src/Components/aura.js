@@ -37,10 +37,12 @@ const AuraIntro = () => (
 const AuraInfo = () => (
     <div className='contain'>
         <div className='title-row'>
-            <img src={aura_logo} alt='Aura logo' className='logo-holder-aura' />
             <div className='title-text'>
-                <h3 className='text' style={{color: '#46b5e8'}}>Aura Smart Air</h3>
+            <img src={aura_logo} alt='Aura logo' className='logo-holder-aura' />
+            <div>
+                <h4 className='text' style={{color: '#46b5e8'}}>Aura Smart Air</h4>
                 <h6 className='text'>Customer Support Platform</h6>
+            </div>
             </div>
 
             <div className='traffic-light'>

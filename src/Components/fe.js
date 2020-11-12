@@ -29,6 +29,7 @@ const color3 = {
 }
 const quote = {
     color: '#dd1f26',
+    fontWeight: 'bold',
     
 }
 const voice = {
@@ -42,12 +43,13 @@ const FeIntro = () => (
 const FeInfo = () => (
     <div className='contain'>
         <div className='title-row'>
-            <img src={fe_gradient} alt='Fe logo' className='logo-holder' />
             <div className='title-text'>
+            <img src={fe_gradient} alt='Fe logo' className='logo-holder' />
+            <div>
                 <h4 className='text _w'>Fe: Mars Fitness Experience</h4>
                 <h6 className='text _g'>Lunge for Mankind</h6>
             </div>
-
+            </div>
             <div className='traffic-light'>
                 <div className='color-sample' style={color1}></div>
                 <div className='color-sample' style={color2}></div>

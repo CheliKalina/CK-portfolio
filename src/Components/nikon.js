@@ -27,7 +27,8 @@ const quote = {
 }
 const quotetext = {
     color: '#ED3823',
-    width: '35vw'
+    width: '35vw',
+    fontWeight: 'bold',
 
 }
 const voice = {
@@ -50,10 +51,12 @@ function NikonIntro() {
 const NikonInfo = () => (
     <div className='contain'>
         <div className='title-row'>
-            <img src={nikon_black} alt='Boop logo' className='logo-holder' />
             <div className='title-text'>
-                <h3 className='text _w'>Nikon: USA Site Redesign</h3>
+            <img src={nikon_black} alt='Boop logo' className='logo-holder' />
+            <div>
+                <h4 className='text _w'>Nikon USA Site Redesign</h4>
                 <h6 className='text _g'>Capture Your Presence</h6>
+            </div>
             </div>
 
             <div className='traffic-light'>

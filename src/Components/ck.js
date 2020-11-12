@@ -38,10 +38,12 @@ const CkIntro = () => (
 const CkInfo = () => (
     <div className='contain'>
         <div className='title-row'>
-            <FontAwesomeIcon icon={faCircleNotch} className='logo-holder-c' style={{ color: 'grey' }} />
             <div className='title-text'>
-                <h3 className='text _w'>This Portfolio</h3>
+            <FontAwesomeIcon icon={faCircleNotch} className='logo-holder-c' style={{ color: 'grey' }} />
+                <div className='title-text-marg'>
+                <h4 className='text _w'>This Portfolio</h4>
                 <h6 className='text _lg'>Frontend &amp; Design</h6>
+                </div>
             </div>
 
             <div className='traffic-light'>
@@ -50,7 +52,8 @@ const CkInfo = () => (
                 <div className='color-sample' style={color1}></div>
             </div>
         </div>
-        <div className='quote-holder'>
+
+         <div className='quote-holder'>
             <h6 className='text _lg'><b>Design teaches empathy, coding teaches logic; together, they empower me to create.</b></h6>
         </div>
         <div style={{ paddingLeft: '1.5vw' }}>
@@ -59,7 +62,6 @@ const CkInfo = () => (
             <h6 className='text _g'>+ Design: for comparison - view original design portfolio
             <a href='https://chelikalina.com' target='_blank' rel="noopener noreferrer" className='text _lg text-dec'> pt. 1</a></h6>
         </div>
-
         <div className='stack'>
             <img src={react_logo} alt="React" style={{ width: '2.3vw', opacity: '0.6' }} />
             <FontAwesomeIcon style={lg} icon={faJsSquare} className='stackIcon-2' />
@@ -68,7 +70,7 @@ const CkInfo = () => (
             <img src={firebase} alt="Firebase" style={{ width: '2.5vw', opacity: '0.5' }} />
             <FontAwesomeIcon style={lg} icon={faFontAwesome} className='stackIcon-2' />
             <FontAwesomeIcon style={lg} icon={faBootstrap} className='stackIcon-2' />
-        </div>
+        </div> 
     </div>
 )
 
@@ -80,9 +82,9 @@ const CkVid = () => (
 const CkLogo = () => (
     <div className='flex' >
         <div className='logo-holder-end-c'>
-            <FontAwesomeIcon icon={faCircleNotch} className="_b" /></div>
-        <div className="options _b">
-            <a href='https://drive.google.com/file/d/1lSc09W3R-MdKVV5cOdySPhf9GpZMVIQJ/view?usp=sharing' className="text-dec" target="_blank" rel="noopener noreferrer">resume</a>
+            <FontAwesomeIcon icon={faCircleNotch} className="_g" /></div>
+        <div className="options _g">
+        <a href={'https://docs.google.com/document/d/15EtAk4f-ivYSYvbUlOs7V72n1ARfXOen-XkQqi9eYU0/edit?usp=sharing'} className="text-dec _g"target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
     </div>
 )

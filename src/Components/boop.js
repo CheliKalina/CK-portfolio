@@ -24,7 +24,8 @@ const color3 = {
     backgroundColor: '#75A8A1'
 }
 const quote = {
-    color: '#95A7C3'
+    color: '#95A7C3',
+    fontWeight: 'bold',
 }
 const voice = {
     color: '#75A8A1'
@@ -37,10 +38,12 @@ const BoopIntro = () => (
 const BoopInfo = () => (
     <div className='contain'>
         <div className='title-row'>
-            <img src={boop_black} alt='Boop logo' className='logo-holder' />
             <div className='title-text'>
-                <h3 className='text _w'>Boop: Social Learning</h3>
+            <img src={boop_black} alt='Boop logo' className='logo-holder' />
+            <div>
+                <h4 className='text _w'>Boop: Social Learning</h4>
                 <h6 className='text _g'>Play with Confidence</h6>
+            </div>
             </div>
 
             <div className='traffic-light'>
