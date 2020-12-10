@@ -46,7 +46,7 @@ const CondInfo = () => (
     <div className='contain'>
         <div className='title-row'>
             <div className='title-text'>
-            <img src={logo_cond} alt='Boop logo' className='logo-holder' style={{margin: '0 1vw'}}/>
+            <img src={logo_cond} alt='Condoments logo' className='logo-holder' style={{margin: '0 1vw'}}/>
             <div>
                 <h4 className='text _w'>Condoments</h4>
                 <h6 className='text' style={tag}>Cover Your Wieners</h6>

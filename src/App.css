@@ -7,6 +7,9 @@
   cursor: crosshair;
   font-family: 'futura';
   font-weight: normal;
+  font-size: 2vw;
+  overflow: hidden;
+  height: 100vh
 }
 
 .App-logo {

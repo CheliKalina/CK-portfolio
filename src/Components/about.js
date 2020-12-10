@@ -68,7 +68,7 @@ function About() {
           <Text>+ kalinacheli@gmail.com</Text>
           <Text>+ 052 940 2744</Text>
           <Text >+<a href="https://www.linkedin.com/in/cheli-kalina-8212abb3/" alt='LinkedIn' target="_blank" style={dec} rel="noopener noreferrer"> LinkedIn </a> || 
-          <a href={'https://docs.google.com/document/d/15EtAk4f-ivYSYvbUlOs7V72n1ARfXOen-XkQqi9eYU0/edit?usp=sharing'} style={dec} target="_blank" rel="noopener noreferrer"> Resume</a>
+          <a href={'https://drive.google.com/file/d/1dnRGNm6BkXt9lrovtmgl_TOY8feqCm14/view?usp=sharing'} style={dec} target="_blank" rel="noopener noreferrer"> Resume</a>
 </Text>
         </Holder>
       </FlexRow>

@@ -75,35 +75,7 @@ function App() {
     ,
     {
       id: 4,
-      arr: [
-        { page: <BoopIntro /> },
-        { page: <BoopInfo /> },
-        { page: <BoopHero /> },
-        { page: <BoopVid /> },
-        { page: <BoopImg1 /> },
-        { page: <BoopImg2 /> },
-        { page: <BoopImg3 /> },
-        { page: <BoopLogo /> },
 
-      ]
-    }
-    ,
-    {
-      id: 5,
-      arr: [
-        { page: <NikonIntro /> },
-        { page: <NikonInfo /> },
-        { page: <NikonHero /> },
-        { page: <NikonVid /> },
-        { page: <NikonImg1 /> },
-        { page: <NikonImg2 /> },
-        { page: <NikonLogo /> },
-
-      ]
-    }
-    ,
-    {
-      id: 6,
       arr: [
         { page: <CondIntro /> },
         { page: <CondInfo /> },
@@ -119,12 +91,40 @@ function App() {
     }
     ,
     {
+      id: 5,
+      arr: [
+        { page: <BoopIntro /> },
+        { page: <BoopInfo /> },
+        { page: <BoopHero /> },
+        { page: <BoopVid /> },
+        { page: <BoopImg1 /> },
+        { page: <BoopImg2 /> },
+        { page: <BoopImg3 /> },
+        { page: <BoopLogo /> },
+
+      ]
+    }
+    ,
+    {
+      id: 6,
+      arr: [
+        { page: <NikonIntro /> },
+        { page: <NikonInfo /> },
+        { page: <NikonHero /> },
+        { page: <NikonVid /> },
+        { page: <NikonImg1 /> },
+        { page: <NikonImg2 /> },
+        { page: <NikonLogo /> },
+      ]
+    }
+    ,
+    
+    {
       id: 7,
       arr: [
         { page: <ImpastaIntro /> },
         { page: <ImpHero /> },
         { page: <ComingI /> },
-
 
       ]
     }
@@ -165,9 +165,9 @@ function App() {
     { key: 1, id: 1, bg: 'ck slide' },
     { key: 2, id: 2, bg: 'aura slide', },
     { key: 3, id: 3, bg: 'fe slide' },
-    { key: 4, id: 4, bg: 'boop slide' },
-    { key: 5, id: 5, bg: 'nikon slide' },
-    { key: 6, id: 6, bg: 'cond slide' },
+    { key: 4, id: 4, bg: 'cond slide' },
+    { key: 5, id: 5, bg: 'boop slide' },
+    { key: 6, id: 6, bg: 'nikon slide' },
     { key: 7, id: 7, bg: 'impasta slide' },
     { key: 8, id: 8, bg: 'alexir slide' },
     { key: 9, id: 9, bg: 'hangry slide' },
@@ -217,7 +217,7 @@ function App() {
         <div className='mobile'>
           <h5>At this point in time, this Portfolio is only available to view on desktop.</h5>
           <p>Apologies for the inconvenience!</p>
-          <a href={'https://docs.google.com/document/d/15EtAk4f-ivYSYvbUlOs7V72n1ARfXOen-XkQqi9eYU0/edit?usp=sharing'} style={dec} target="_blank" rel="noopener noreferrer">resume</a>
+          <a href={'https://drive.google.com/file/d/1dnRGNm6BkXt9lrovtmgl_TOY8feqCm14/view?usp=sharing'} style={dec} target="_blank" rel="noopener noreferrer">resume</a>
         </div>
       
     </div >

@@ -84,7 +84,7 @@ const CkLogo = () => (
         <div className='logo-holder-end-c'>
             <FontAwesomeIcon icon={faCircleNotch} className="_g" /></div>
         <div className="options _g">
-        <a href={'https://docs.google.com/document/d/15EtAk4f-ivYSYvbUlOs7V72n1ARfXOen-XkQqi9eYU0/edit?usp=sharing'} className="text-dec _g"target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href={'https://drive.google.com/file/d/1dnRGNm6BkXt9lrovtmgl_TOY8feqCm14/view?usp=sharing'} className="text-dec _g"target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
     </div>
 )
